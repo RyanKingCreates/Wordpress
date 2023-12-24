@@ -44,7 +44,10 @@ This README provides a comprehensive guide on deploying a WordPress site on an A
    sudo systemctl enable docker
 4. **Add EC2 User to the Docker Group** (to use Docker as a non-root user):
    ```bash
-   sudo usermod -aG docker ${USER}
+   sudo usermod -aG docker ec2-user
+5. **Apply Group:**
+   ```bash
+   newgrp docker
 ## Step 4: Install Docker Compose on EC2
 1. **Download Docker Compose** (replace 1.29.2 with the latest version):
    ```bash
