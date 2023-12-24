@@ -63,10 +63,12 @@ This README provides a comprehensive guide on deploying a WordPress site on an A
    ```bash
    git clone https://github.com/RyanKingCreates/Wordpress.git
 5. **Navigate to the Directory** containing your docker-compose.yml file.
-6. **Run Docker Compose:**
+   ```bash
+   cd Wordpress
+7. **Run Docker Compose:**
    ```bash
    docker-compose up -d
-7. **Verify that Containers are Running:**
+8. **Verify that Containers are Running:**
    ```bash
    docker-compose ps
 ## Step 6: Access Your WordPress Site
