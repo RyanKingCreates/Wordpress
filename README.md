@@ -48,13 +48,13 @@ This README provides a comprehensive guide on deploying a WordPress site on an A
 ## Step 4: Install Docker Compose on EC2
 1. **Download Docker Compose** (replace 1.29.2 with the latest version):
    ```bash
-   sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+   sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
 2. **Make Docker Compose Executable:**
    ```bash
    sudo chmod +x /usr/local/bin/docker-compose
 3. **Verify Installation:**
    ```bash
-   docker-compose --version
+   docker-compose version
 ## Step 5: Deploy WordPress using Docker Compose
 1. **Clone Your Repository** or copy the Docker Compose file to your EC2 instance.
 2. **Navigate to the Directory** containing your docker-compose.yml file.
