@@ -56,12 +56,17 @@ This README provides a comprehensive guide on deploying a WordPress site on an A
    ```bash
    docker-compose version
 ## Step 5: Deploy WordPress using Docker Compose
-1. **Clone Your Repository** or copy the Docker Compose file to your EC2 instance.
-2. **Navigate to the Directory** containing your docker-compose.yml file.
-3. **Run Docker Compose:**
+1. **Download Git:**
+   ```bash
+   sudo yum install git
+3. **Clone Your Repository** or copy the Docker Compose file to your EC2 instance.
+   ```bash
+   git clone https://github.com/RyanKingCreates/Wordpress.git
+5. **Navigate to the Directory** containing your docker-compose.yml file.
+6. **Run Docker Compose:**
    ```bash
    docker-compose up -d
-4. **Verify that Containers are Running:**
+7. **Verify that Containers are Running:**
    ```bash
    docker-compose ps
 ## Step 6: Access Your WordPress Site
